@@ -1,43 +1,18 @@
- const inputField = document.getElementById('nameField');
-      
-inputField.addEventListener('input', function () {
-  // Get the width of the input field and its content
-  const inputWidth = inputField.offsetWidth;
-  const scrollWidth = inputField.scrollWidth;
+const links = document.querySelectorAll(".nav-item a");
 
-  // If the content exceeds the input field's width, stop further input
-  if (scrollWidth > inputWidth) {
-       inputField.value = inputField.value.substring(0, inputField.value.length - 1); // Prevent adding more characters
-      // alert('Text limit reached!');
+function enlargeImage() {
+    document.getElementById("nav-item a").style.color = "#40E0D0 ";
   }
+
+links.forEach(link => {
+  link.addEventListener("click", function () {
+    // Remove the active class from all links
+    // links.forEach(l => l.classList.remove("active"));
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove("active");
+    }
+    // Add the active class to the clicked link
+    this.classList.add("active");
+    enlargeImage();
+  });
 });
-
-
-let links = document.querySelector(".login-button");
-
-  links.addEventListener('click', ()=> {
-    // links.classList.remove("active");
-    document.querySelector(".form-box").classList.add('active');
-  });
-
-
-  let iconClose = document.querySelector(".icon-close .fa-solid");
- 
-  iconClose.addEventListener('click', ()=> {
-    // links.classList.remove("active");
-    document.querySelector(".form-box").classList.remove('active');
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-

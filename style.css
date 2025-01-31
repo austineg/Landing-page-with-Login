@@ -1,178 +1,70 @@
-/* .navbar{ 
-    background-color: #fff;
-    height: 60px;
-    margin: 24px;
-    border-radius: 30px;
-    padding: 0.5em;
- } */
 body{
-    background: url(hero-bg.jpg) no-repeat center;
-    background-size: cover;
+background-color: #3d150f;
 }
- .navbar-nav{
-    justify-content: right;
+.nav-item a{
+    color: #fbfcfc ;
 }
-
-.navbar-brand{
-    font-weight: 500;
-    color: #009979;
-    font-size: 24px;
-    transition: 0.3s color;
+.navbar{
+    /* position: relative; to make it unfixed */
+    top: 30px;
 }
-
-.login-button{
-    background-color: #009970;
-    color: #fff;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s background-color;
+.Logo img{
+    margin: 20px 90px;
+    width: 150px; 
+    height: auto;
 }
-
-.login-button:hover{
-    background-color: #00b383;
-} 
-
-.navbar-toggler{
+.card{
+    margin-top: 15%;
+    background-color: #3d150f;
     border: none;
-    font-size: 1.25em;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-    outline: none;
-}
-
-.nav-link{
-    color: #666777;
-    font-weight: 500;
-    position: relative;
-}
-
-.nav-link:hover, .nav-link.active{
-    color: #000;
-}
-
-@media (min-width:991px){
-  .nav-link::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 2px;
-    background-color: #009970;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-link:hover::before, .nav-link.active::before{
- width: 80%;
- visibility: visible;
- }
-}
-
-.hero-section{
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    }
- 
-.hero-section::before{
-    background-color: rgba(0, 0green, 0blue, 0.6alpha);
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.hero-section .container{
-    height: 100vh;
-  }
-
-.hero-section h1{
-    font-size: 1.5em;
-}
-
-.hero-section h2{
-    font-size: 1.2em;
-}
-
-.form-box{
- position: absolute;
- background-color: #85c1e9;
- top: 20%;
- left: 35%;
- width: 35%;
- height: 65%;
- background: transparent;
- backdrop-filter: blur(50px) ;
- /* display: block;    */
-  margin-top: 10px; 
-  /* transform: scale(0);  */
-    display: none;  
-}
-
-.form-box.active{
-    /* transform: scale(1); */
-    display: block;
-}
-
-h1{
+    color: #fbfcfc;
+    margin-left: 5%;
     display: flex;
-    justify-content: center;
+  /* flex-wrap: wrap;  */
+    flex-direction: row;  
+     gap: 250px;  
+         /* align-items: center;   */
+     /* justify-content: left;  */
 }
-
- .input-field{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 20px 50px;
-    background-color: #eaeaea; 
-    border-radius: 8px;
-    height: 45px;
+.left{
+  margin-top: -6%;
 }
-
-.input-field input{
-    width: 100%;
-     background: transparent;   
-     border: none;     
- }
-
- .input-field input:focus{
-    outline: none;
- }
-
- .input-field i{
-    padding-top: 10px;
-    color: #828394;
- }
-
- p{
-    margin: 0 50px;
- }
-
- .btn-field{
-    margin: 50px 150px;
-    display: flex;
-    justify-content: space-around;
- }
-
-.icon-close .fa-solid{
-    float: right;
-    transform: scale(1.8);
-    margin: 6.5px 4.8px;
-    border-bottom-left-radius: 5px;
-    color: #fff;
-    background: #000;
-    cursor: pointer;
-    
- }
- 
-
+.left h1{
+  width: 100vh; 
+  font-size: 420%; 
+}
+.image{
+    margin: -9%;
+}
+.left h2{
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ff9900;
+}
+p{
+    width: 82%;
+    margin-top: 3%;
+    font-size: 30px;
+}
+#btn1{
+    border-radius: 20px;
+    background-color: #ff9900;
+    border: none;
+    padding: 4px 20px;
+}
+#btn2{
+    border-radius: 20px;
+    background: none;
+    border-color: #fbfcfc;
+    color: #fbfcfc;
+    margin: 25px;
+    padding: 4px 20px;
+}
+#btn2:hover{
+    background-color: #000000;
+}
+#btn1:hover{
+    background-color: #40E0D0 ;
+}
