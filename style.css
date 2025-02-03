@@ -37,10 +37,7 @@ background-color: #3d150f;
     margin: -9%;
 }
 .left h2{
-    font-family: 'Georgia', serif;
     font-size: 50px;
-    font-style: italic;
-    font-weight: bold;
     color: #ff9900;
 }
 p{
@@ -50,7 +47,8 @@ p{
 }
 #btn1{
     border-radius: 20px;
-    background-color: #ff9900;
+/*     background-color: #ff9900; */
+    background-color: #40E0D0 ;
     border: none;
     padding: 4px 20px;
 }
@@ -67,4 +65,11 @@ p{
 }
 #btn1:hover{
     background-color: #40E0D0 ;
+}
+#btn1{
+transition: transform 0.5s ease-in-out;
+}
+#btn1:hover{
+    background-color: #40E0D0 ;
+    transform: scale(1.5); /* Increases size by 1.5 times */
 }
